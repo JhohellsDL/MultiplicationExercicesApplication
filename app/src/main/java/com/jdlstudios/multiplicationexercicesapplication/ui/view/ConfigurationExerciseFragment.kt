@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.jdlstudios.multiplicationexercicesapplication.R
 import com.jdlstudios.multiplicationexercicesapplication.databinding.FragmentConfigurationExerciseBinding
 
 class ConfigurationExerciseFragment : Fragment() {
@@ -17,7 +19,9 @@ class ConfigurationExerciseFragment : Fragment() {
     ): View {
         binding = FragmentConfigurationExerciseBinding.inflate(inflater)
 
-
+        binding.buttonStartExercises.setOnClickListener {
+            findNavController().navigate(R.id.action_configurationExerciseFragment_to_easyLevelFragment)
+        }
 
         return binding.root
     }

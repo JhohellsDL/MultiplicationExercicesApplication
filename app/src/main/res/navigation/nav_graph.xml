@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/configurationExerciseFragment">
+
+    <fragment
+        android:id="@+id/configurationExerciseFragment"
+        android:name="com.jdlstudios.multiplicationexercicesapplication.ui.view.ConfigurationExerciseFragment"
+        android:label="fragment_configuration_exercise"
+        tools:layout="@layout/fragment_configuration_exercise" >
+        <action
+            android:id="@+id/action_configurationExerciseFragment_to_easyLevelFragment"
+            app:destination="@id/easyLevelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/easyLevelFragment"
+        android:name="com.jdlstudios.multiplicationexercicesapplication.ui.view.EasyLevelFragment"
+        android:label="EasyLevelFragment"
+        tools:layout="@layout/fragment_easy_level"/>
+</navigation>
