@@ -13,10 +13,34 @@
         <action
             android:id="@+id/action_configurationExerciseFragment_to_easyLevelFragment"
             app:destination="@id/easyLevelFragment" />
+        <action
+            android:id="@+id/action_configurationExerciseFragment_to_intermediateLevelFragment"
+            app:destination="@id/intermediateLevelFragment" />
+        <action
+            android:id="@+id/action_configurationExerciseFragment_to_challengingLevelFragment"
+            app:destination="@id/challengingLevelFragment" />
+        <action
+            android:id="@+id/action_configurationExerciseFragment_to_advancedLevelFragment"
+            app:destination="@id/advancedLevelFragment" />
     </fragment>
     <fragment
         android:id="@+id/easyLevelFragment"
         android:name="com.jdlstudios.multiplicationexercicesapplication.ui.view.EasyLevelFragment"
         android:label="EasyLevelFragment"
         tools:layout="@layout/fragment_easy_level"/>
+    <fragment
+        android:id="@+id/advancedLevelFragment"
+        android:name="com.jdlstudios.multiplicationexercicesapplication.ui.view.AdvancedLevelFragment"
+        android:label="AdvancedLevelFragment"
+        tools:layout="@layout/fragment_advanced_level"/>
+    <fragment
+        android:id="@+id/challengingLevelFragment"
+        android:name="com.jdlstudios.multiplicationexercicesapplication.ui.view.ChallengingLevelFragment"
+        android:label="ChallengingLevelFragment"
+        tools:layout="@layout/fragment_challenging_level"/>
+    <fragment
+        android:id="@+id/intermediateLevelFragment"
+        android:name="com.jdlstudios.multiplicationexercicesapplication.ui.view.IntermediateLevelFragment"
+        android:label="IntermediateLevelFragment"
+        tools:layout="@layout/fragment_intermediate_level"/>
 </navigation>
