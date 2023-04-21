@@ -1,4 +1,9 @@
 package com.jdlstudios.multiplicationexercicesapplication.ui.viewmodel
 
-class ConfigurationExercisesViewModel {
+import androidx.lifecycle.ViewModel
+
+class ConfigurationExercisesViewModel: ViewModel() {
+
+
+
 }
